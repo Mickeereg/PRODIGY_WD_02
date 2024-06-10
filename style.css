@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+  transition: all 0.4s ease;
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #9b9b9b;
+  padding: 0 20px;
+}
+section.dark {
+  background: #000000;
+}
+section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  max-width: 450px;
+  width: 100%;
+  background: #fdf0c2;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  position: relative;
+}
+section.dark .container {
+  background: #738092;
+}
+section .container .icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+section .container .icons i {
+  height: 20px; 
+  width: 20px;
+  background: #24292D;
+  color: #00dfa0;
+  text-align: center;
+  line-height: 20px; 
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+}
+section.dark .container .icons i {
+  background: #fcfdbe;
+  color: #323840;
+}
+.container .icons i.fa-sun {
+  display: none;
+}
+section.dark .container .icons i.fa-sun {
+  display: inline-block;
+}
+section .container .time {
+  display: flex;
+  align-items: center;
+}
+.container .time .time-colon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.time .time-colon .time-text {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #b6958c;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(222, 181, 181, 0.2);
+}
+section.dark .time .time-colon .time-text {
+  background: #6bebc7;
+}
+.time .time-colon .time-text,
+.time .time-colon .colon {
+  font-size: 20px;
+  font-weight: 6000;
+}
+section.dark .time .time-text .num,
+section.dark .time .colon {
+  color: #000000;
+}
+.time .time-colon .colon {
+  font-size: 30px;
+  margin: 0 5px;
+}
+.time .time-colon .time-text .text {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+section.dark .time .time-colon .text {
+  color: #0b0505;
+}
+.controls {
+  margin-top: 10px;
+}
+.controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background: #24292D;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+.controls button:hover {
+  background: #444;
+}
+section.dark .controls button {
+  background: #fcfdbe;
+  color: #323840;
+}
+section.dark .controls button:hover {
+  background: #fff;
+}
+.laps {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 170px;
+  overflow-y: auto;
+}
+.laps ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.laps ul li {
+  padding: 10px;
+  font-size: 11px;
+  background: #ddd;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+section.dark .laps ul li {
+  background: #444;
+  color: #fff;
+}
+
